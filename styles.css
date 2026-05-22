@@ -251,15 +251,17 @@ h6 {
 
 .logo-img {
   width: auto;
-  height: 48px;
-  border-radius: 10px;
+  height: 64px;
+  /* increased from 48px */
+  border-radius: 12px;
   object-fit: contain;
   transition: transform .4s var(--spring);
-  filter: drop-shadow(0 0 6px rgba(255, 255, 255, .15))
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, .25));
 }
 
-.nav-logo:hover .logo-img {
-  transform: rotate(-12deg) scale(1.08)
+.nav-logo {
+  gap: 14px;
+  font-size: 1.35rem;
 }
 
 .nav-links {
