@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — MunibaVo AI Automation Case Studies</title>
+<meta name="description" content="Real AI automation case studies from MunibaVo. See how we've helped businesses achieve 90% faster response times, 3× more leads, and $50M+ revenue.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="scrollBar"></div>
+<div class="cur-ring" id="curR"></div>
+<div class="cur-dot" id="curD"></div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="container nav-in">
+    <a href="index.html" class="nav-logo"><div class="logo-m">M</div>MunibaVo</a>
+    <div class="nav-links" id="navL">
+      <a href="index.html" class="nl-link" data-page="home">Home</a>
+      <a href="services.html" class="nl-link" data-page="services">Services</a>
+      <a href="about.html" class="nl-link" data-page="about">About</a>
+      <a href="portfolio.html" class="nl-link act" data-page="portfolio">Portfolio</a>
+      <a href="contact.html" class="nl-link" data-page="contact">Contact</a>
+    </div>
+    <div class="nav-r">
+      <button class="th-btn" id="thBtn" onclick="togTheme()" aria-label="Toggle theme"><span id="thI">🌙</span></button>
+      <a href="contact.html" class="nav-cta">Get Started →</a>
+      <button class="ham" id="ham" onclick="togMob()" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mob-ov" id="mobOv" onclick="togMob()"></div>
+<div class="mob-dr" id="mobDr">
+  <a href="index.html" class="nl-link" data-page="home">Home</a>
+  <a href="services.html" class="nl-link" data-page="services">Services</a>
+  <a href="about.html" class="nl-link" data-page="about">About</a>
+  <a href="portfolio.html" class="nl-link act" data-page="portfolio">Portfolio</a>
+  <a href="contact.html" class="nl-link" data-page="contact">Contact</a>
+</div>
+
+<!-- PORTFOLIO -->
+<section class="port-pg">
+  <div class="container">
+    <div class="sec-hdr">
+      <span class="slabel sl-b rv">Case Studies</span>
+      <h2 class="sh rv" style="transition-delay:.05s">Real Results From <span class="grad-tx">Real AI</span></h2>
+      <p class="ss rv" style="transition-delay:.1s">Every project below is a working system delivering measurable business impact — today.</p>
+    </div>
+    <div class="fbar rv">
+      <button class="fb act" data-filter="all" onclick="filter('all')">All</button>
+      <button class="fb" data-filter="email" onclick="filter('email')">Email AI</button>
+      <button class="fb" data-filter="calling" onclick="filter('calling')">Calling</button>
+      <button class="fb" data-filter="whatsapp" onclick="filter('whatsapp')">WhatsApp</button>
+      <button class="fb" data-filter="custom" onclick="filter('custom')">Custom</button>
+    </div>
+    <div class="port-grid" id="portGrid">
+      <div class="card proj-card rv" data-cat="email"><div class="ph"><span class="ptag">Email AI</span><h3>E-Commerce Support Autopilot</h3><div class="pm">↑ Reduced response time by 90%</div></div><div class="pb"><p>AI email agent for a major Shopify store handling 2,000+ daily tickets. Resolves 85% autonomously in under 30 seconds.</p><div class="bdg-row"><span class="bdg">Email AI</span><span class="bdg">E-Commerce</span><span class="bdg">OpenAI</span></div></div></div>
+      <div class="card proj-card rv" style="transition-delay:.06s" data-cat="calling"><div class="ph"><span class="ptag">AI Calling</span><h3>Real Estate Lead Qualifier</h3><div class="pm">↑ 3× more qualified leads</div></div><div class="pb"><p>Outbound AI calling agent contacts leads within 60s, qualifies through natural conversation, books viewings.</p><div class="bdg-row"><span class="bdg">Voice AI</span><span class="bdg">Real Estate</span><span class="bdg">Twilio</span></div></div></div>
+      <div class="card proj-card rv" style="transition-delay:.12s" data-cat="whatsapp"><div class="ph"><span class="ptag">WhatsApp</span><h3>Restaurant Order Bot</h3><div class="pm">↑ 45% increase in orders</div></div><div class="pb"><p>WhatsApp ordering for 12-location chain. Browse menus, customize, pay, track delivery — all in chat.</p><div class="bdg-row"><span class="bdg">WhatsApp API</span><span class="bdg">Food &amp; Bev</span><span class="bdg">Payments</span></div></div></div>
+      <div class="card proj-card rv" data-cat="custom"><div class="ph"><span class="ptag">Custom AI</span><h3>Legal Document Analyzer</h3><div class="pm">↑ 80% faster review cycles</div></div><div class="pb"><p>Reads, summarizes, flags risk clauses in contracts. Cut review from 4 hours to 45 minutes.</p><div class="bdg-row"><span class="bdg">Custom AI</span><span class="bdg">Legal</span><span class="bdg">LangChain</span></div></div></div>
+      <div class="card proj-card rv" style="transition-delay:.06s" data-cat="email"><div class="ph"><span class="ptag">Email AI</span><h3>SaaS Onboarding Sequences</h3><div class="pm">↑ 60% higher activation rate</div></div><div class="pb"><p>Intelligent email flows adapt to user behavior — personalizing messaging, timing, and content.</p><div class="bdg-row"><span class="bdg">Email AI</span><span class="bdg">SaaS</span><span class="bdg">Personalization</span></div></div></div>
+      <div class="card proj-card rv" style="transition-delay:.12s" data-cat="calling"><div class="ph"><span class="ptag">AI Calling</span><h3>Healthcare Appointment Scheduler</h3><div class="pm">↓ 70% fewer no-shows</div></div><div class="pb"><p>AI confirms appointments, reschedules cancellations, sends reminders — reducing no-shows dramatically.</p><div class="bdg-row"><span class="bdg">Voice AI</span><span class="bdg">Healthcare</span><span class="bdg">Scheduling</span></div></div></div>
+    </div>
+    <div class="impact-sec">
+      <div class="sec-hdr"><h2 class="sh rv">Cumulative Impact</h2></div>
+      <div class="imp-grid">
+        <div class="imp-i rv"><h3><span class="counter" data-target="2">0</span>M+</h3><p>Emails Automated</p></div>
+        <div class="imp-i rv" style="transition-delay:.06s"><h3><span class="counter" data-target="500">0</span>K+</h3><p>Calls Handled</p></div>
+        <div class="imp-i rv" style="transition-delay:.12s"><h3><span class="counter" data-target="10">0</span>M+</h3><p>Messages Processed</p></div>
+        <div class="imp-i rv" style="transition-delay:.18s"><h3>$<span class="counter" data-target="50">0</span>M+</h3><p>Revenue Generated</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="ftr">
+  <div class="container">
+    <div class="ftr-grid">
+      <div class="ftr-brand"><div class="ftr-logo"><div class="ftr-lm">M</div>MunibaVo</div><p>AI automation solutions that transform how businesses operate. Intelligent agents working 24/7.</p><div class="ftr-soc"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="Twitter">𝕏</a><a href="#" aria-label="Instagram">📷</a><a href="#" aria-label="WhatsApp">💬</a></div></div>
+      <div class="ftr-col"><h4>Services</h4><a href="services.html">Email AI Agent</a><a href="services.html">AI Calling</a><a href="services.html">WhatsApp Bots</a><a href="services.html">CRM Automation</a><a href="services.html">Lead Generation</a></div>
+      <div class="ftr-col"><h4>Company</h4><a href="about.html">About Us</a><a href="portfolio.html">Portfolio</a><a href="contact.html">Contact</a><a href="#">Careers</a><a href="#">Blog</a></div>
+      <div class="ftr-col"><h4>Resources</h4><a href="#">Documentation</a><a href="#">Case Studies</a><a href="#">API Reference</a><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+    </div>
+    <div class="ftr-bot"><p>© 2025 MunibaVo. All rights reserved.</p><p>Built with AI. Powered by Passion.</p></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+/* ── Filter (portfolio page only) ── */
+function filter(c){
+  document.querySelectorAll('.fb').forEach(b=>b.classList.toggle('act',b.dataset.filter===c));
+  document.querySelectorAll('.proj-card').forEach(cd=>{
+    const s=c==='all'||cd.dataset.cat===c;
+    cd.style.display=s?'':'none';
+    if(s){cd.style.opacity='0';cd.style.transform='translateY(16px)';setTimeout(()=>{cd.style.transition='opacity .35s,transform .35s';cd.style.opacity='1';cd.style.transform='translateY(0)'},30)}
+  });
+}
+</script>
+</body>
+</html>
