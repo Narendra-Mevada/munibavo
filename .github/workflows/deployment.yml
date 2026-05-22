@@ -1,0 +1,22 @@
+name: Deploy Munibavo
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    - runs-on: ubuntu-latest
+      uses: actions/checkout@v3
+
+    - name: Deploy using ssh
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: ubuntu
+        key: ${{ secrets.SSH_KEY }}
+        script: |
+          cd /var/www/html/antiagent
+          git pull origin main
+          chmod -R 755 *
+          sudo systemctl restart nginx
