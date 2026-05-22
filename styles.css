@@ -250,9 +250,9 @@ h6 {
 }
 
 .logo-img {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
   object-fit: cover;
   transition: transform .4s var(--spring)
 }
@@ -2422,9 +2422,9 @@ section {
 }
 
 .ftr-logo-img {
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
   object-fit: cover
 }
 
