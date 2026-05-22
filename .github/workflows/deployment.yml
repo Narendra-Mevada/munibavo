@@ -22,5 +22,5 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             cd /var/www/munibavo/
-            sudo git pull origin main
+            sudo git clone https://github.com/Narendra-Mevada/munibavo.git
             sudo systemctl restart nginx
