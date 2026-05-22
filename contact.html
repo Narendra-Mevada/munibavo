@@ -1,123 +1,228 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact — MunibaVo AI Automation Agency</title>
-<meta name="description" content="Get in touch with MunibaVo. Book a free AI automation consultation. Email, phone, or fill out the contact form.">
-<link rel="icon" type="image/png" href="logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — MunibaVo AI Automation Agency</title>
+  <meta name="description"
+    content="Get in touch with MunibaVo. Book a free AI automation consultation. Email, phone, or fill out the contact form.">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<div id="scrollBar"></div>
-<div class="cur-ring" id="curR"></div>
-<div class="cur-dot" id="curD"></div>
+  <div id="scrollBar"></div>
+  <div class="cur-ring" id="curR"></div>
+  <div class="cur-dot" id="curD"></div>
 
-<!-- NAV -->
-<nav class="nav" id="nav">
-  <div class="container nav-in">
-    <a href="index.html" class="nav-logo"><img src="logo.png" alt="MunibaVo Logo" class="logo-img">MunibaVo</a>
-    <div class="nav-links" id="navL">
-      <a href="index.html" class="nl-link" data-page="home">Home</a>
-      <a href="services.html" class="nl-link" data-page="services">Services</a>
-      <a href="about.html" class="nl-link" data-page="about">About</a>
-      <a href="portfolio.html" class="nl-link" data-page="portfolio">Portfolio</a>
-      <a href="contact.html" class="nl-link act" data-page="contact">Contact</a>
-    </div>
-    <div class="nav-r">
-      <button class="th-btn" id="thBtn" onclick="togTheme()" aria-label="Toggle theme"><span id="thI">🌙</span></button>
-      <a href="contact.html" class="nav-cta">Get Started →</a>
-      <button class="ham" id="ham" onclick="togMob()" aria-label="Menu"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-</nav>
-<div class="mob-ov" id="mobOv" onclick="togMob()"></div>
-<div class="mob-dr" id="mobDr">
-  <a href="index.html" class="nl-link" data-page="home">Home</a>
-  <a href="services.html" class="nl-link" data-page="services">Services</a>
-  <a href="about.html" class="nl-link" data-page="about">About</a>
-  <a href="portfolio.html" class="nl-link" data-page="portfolio">Portfolio</a>
-  <a href="contact.html" class="nl-link act" data-page="contact">Contact</a>
-</div>
-
-<!-- CONTACT -->
-<section class="cnt-pg">
-  <div class="container">
-    <div class="sec-hdr">
-      <span class="slabel sl-b rv">Contact</span>
-      <h2 class="sh rv" style="transition-delay:.05s">Let's Talk <span class="grad-tx">Automation</span></h2>
-      <p class="ss rv" style="transition-delay:.1s">Book a free consultation. We'll map your automation opportunities — no obligation.</p>
-    </div>
-    <div class="cnt-lay">
-      <div class="cnt-info rv-l">
-        <h3>Build Something Intelligent Together</h3>
-        <p>Whether you need a simple email responder or a fully custom AI pipeline, our team is ready to architect the perfect solution for your business.</p>
-        <div class="cd"><div class="cd-i">📧</div><div><h4>Email</h4><p>hello@munibavo.com</p></div></div>
-        <div class="cd"><div class="cd-i">📞</div><div><h4>Phone</h4><p>+91 99999 00000</p></div></div>
-        <div class="cd"><div class="cd-i">📍</div><div><h4>Location</h4><p>Ahmedabad, Gujarat, India</p></div></div>
-        <div class="cd"><div class="cd-i">🕐</div><div><h4>Hours</h4><p>Mon — Fri, 9 AM — 7 PM IST</p></div></div>
-        <div class="soc-row">
-          <a href="#" class="soc-a" aria-label="LinkedIn">in</a>
-          <a href="#" class="soc-a" aria-label="Twitter">𝕏</a>
-          <a href="#" class="soc-a" aria-label="Instagram">📷</a>
-          <a href="#" class="soc-a" aria-label="WhatsApp">💬</a>
-        </div>
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="container nav-in">
+      <a href="index.html" class="nav-logo"><img src="logo.png" alt="MunibaVo Logo" class="logo-img">MunibaVo</a>
+      <div class="nav-links" id="navL">
+        <a href="index.html" class="nl-link" data-page="home">Home</a>
+        <a href="services.html" class="nl-link" data-page="services">Services</a>
+        <a href="about.html" class="nl-link" data-page="about">About</a>
+        <a href="portfolio.html" class="nl-link" data-page="portfolio">Portfolio</a>
+        <a href="contact.html" class="nl-link act" data-page="contact">Contact</a>
       </div>
-      <div class="rv-r">
-        <div class="form-w" id="formW">
-          <form id="cForm" onsubmit="subForm(event)">
-            <div class="fg"><label for="cN">Full Name</label><input type="text" id="cN" placeholder="John Doe" required></div>
-            <div class="fg"><label for="cE">Email</label><input type="email" id="cE" placeholder="john@company.com" required></div>
-            <div class="fg"><label for="cCo">Company</label><input type="text" id="cCo" placeholder="Acme Inc."></div>
-            <div class="fg"><label for="cSv">Service</label>
-              <select id="cSv" required><option value="" disabled selected>Select a service…</option><option>Email Reply Agent</option><option>AI Calling Agent</option><option>WhatsApp Automation</option><option>CRM & Workflow</option><option>Custom AI</option><option>Lead Generation</option><option>Chatbot</option><option>Other</option></select>
+      <div class="nav-r">
+        <button class="th-btn" id="thBtn" onclick="togTheme()" aria-label="Toggle theme"><span
+            id="thI">🌙</span></button>
+        <a href="contact.html" class="nav-cta">Get Started →</a>
+        <button class="ham" id="ham" onclick="togMob()"
+          aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <div class="mob-ov" id="mobOv" onclick="togMob()"></div>
+  <div class="mob-dr" id="mobDr">
+    <a href="index.html" class="nl-link" data-page="home">Home</a>
+    <a href="services.html" class="nl-link" data-page="services">Services</a>
+    <a href="about.html" class="nl-link" data-page="about">About</a>
+    <a href="portfolio.html" class="nl-link" data-page="portfolio">Portfolio</a>
+    <a href="contact.html" class="nl-link act" data-page="contact">Contact</a>
+  </div>
+
+  <!-- CONTACT -->
+  <section class="cnt-pg">
+    <div class="container">
+      <div class="sec-hdr">
+        <span class="slabel sl-b rv">Contact</span>
+        <h2 class="sh rv" style="transition-delay:.05s">Let's Talk <span class="grad-tx">Automation</span></h2>
+        <p class="ss rv" style="transition-delay:.1s">Book a free consultation. We'll map your automation opportunities
+          — no obligation.</p>
+      </div>
+      <div class="cnt-lay">
+        <div class="cnt-info rv-l">
+          <h3>Build Something Intelligent Together</h3>
+          <p>Whether you need a simple email responder or a fully custom AI pipeline, our team is ready to architect the
+            perfect solution for your business.</p>
+          <div class="cd">
+            <div class="cd-i">📧</div>
+            <div>
+              <h4>Email</h4>
+              <p>hello@munibavo.com</p>
             </div>
-            <div class="fg"><label for="cM">Message</label><textarea id="cM" placeholder="Tell us about your project…" required></textarea></div>
-            <button type="submit" class="sub-btn" id="subBtn"><span class="bl">Send Message →</span><div class="sp"></div></button>
-          </form>
-          <div class="f-suc" id="fSuc"><div class="chk-c"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Message Sent!</h3><p>We'll get back to you within 24 hours. Thank you!</p></div>
+          </div>
+          <div class="cd">
+            <div class="cd-i">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <p>+91 99999 00000</p>
+            </div>
+          </div>
+          <div class="cd">
+            <div class="cd-i">📍</div>
+            <div>
+              <h4>Location</h4>
+              <p>Ahmedabad, Gujarat, India</p>
+            </div>
+          </div>
+          <div class="cd">
+            <div class="cd-i">🕐</div>
+            <div>
+              <h4>Hours</h4>
+              <p>Mon — Fri, 9 AM — 7 PM IST</p>
+            </div>
+          </div>
+          <div class="soc-row">
+            <a href="#" class="soc-a" aria-label="LinkedIn">in</a>
+            <a href="#" class="soc-a" aria-label="Twitter">𝕏</a>
+            <a href="#" class="soc-a" aria-label="Instagram">📷</a>
+            <a href="#" class="soc-a" aria-label="WhatsApp">💬</a>
+          </div>
+        </div>
+        <div class="rv-r">
+          <div class="form-w" id="formW">
+            <form id="cForm" onsubmit="subForm(event)">
+              <div class="fg"><label for="cN">Full Name</label><input type="text" id="cN" placeholder="John Doe"
+                  required></div>
+              <div class="fg"><label for="cE">Email</label><input type="email" id="cE" placeholder="john@company.com"
+                  required></div>
+              <div class="fg"><label for="cCo">Company</label><input type="text" id="cCo" placeholder="Acme Inc."></div>
+              <div class="fg"><label for="cSv">Service</label>
+                <select id="cSv" required>
+                  <option value="" disabled selected>Select a service…</option>
+                  <option>Email Reply Agent</option>
+                  <option>AI Calling Agent</option>
+                  <option>WhatsApp Automation</option>
+                  <option>CRM & Workflow</option>
+                  <option>Custom AI</option>
+                  <option>Lead Generation</option>
+                  <option>Chatbot</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="fg"><label for="cM">Message</label><textarea id="cM" placeholder="Tell us about your project…"
+                  required></textarea></div>
+              <button type="submit" class="sub-btn" id="subBtn"><span class="bl">Send Message →</span>
+                <div class="sp"></div>
+              </button>
+            </form>
+            <div class="f-suc" id="fSuc">
+              <div class="chk-c"><svg viewBox="0 0 24 24">
+                  <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></div>
+              <h3>Message Sent!</h3>
+              <p>We'll get back to you within 24 hours. Thank you!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="faq-sec">
+        <div class="sec-hdr">
+          <h2 class="sh rv">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-i rv"><button class="faq-q" onclick="togFaq(this)">How long does it take to build an
+            automation?<span class="fi2">+</span></button>
+          <div class="faq-a">
+            <p>Standard automations ship within 1–2 weeks. Complex custom AI solutions take 3–6 weeks. We always provide
+              a clear timeline before starting.</p>
+          </div>
+        </div>
+        <div class="faq-i rv" style="transition-delay:.06s"><button class="faq-q" onclick="togFaq(this)">Do I need
+            technical expertise?<span class="fi2">+</span></button>
+          <div class="faq-a">
+            <p>Not at all! We handle all technical setup, integration, deployment. Solutions include intuitive
+              dashboards, training, and documentation.</p>
+          </div>
+        </div>
+        <div class="faq-i rv" style="transition-delay:.12s"><button class="faq-q" onclick="togFaq(this)">What's the
+            pricing model?<span class="fi2">+</span></button>
+          <div class="faq-a">
+            <p>Project-based pricing for builds and monthly retainers for management. Every engagement starts with a
+              free consultation and transparent quote.</p>
+          </div>
+        </div>
+        <div class="faq-i rv" style="transition-delay:.18s"><button class="faq-q" onclick="togFaq(this)">Can you
+            integrate with our existing tools?<span class="fi2">+</span></button>
+          <div class="faq-a">
+            <p>Absolutely — CRMs, communication tools, e-commerce platforms, databases, APIs. If it has an API, we
+              connect it.</p>
+          </div>
+        </div>
+        <div class="faq-i rv" style="transition-delay:.24s"><button class="faq-q" onclick="togFaq(this)">Is my data
+            safe?<span class="fi2">+</span></button>
+          <div class="faq-a">
+            <p>Enterprise-grade encryption, SOC 2 compliant. Your data is never used to train models and remains fully
+              under your control.</p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="faq-sec">
-      <div class="sec-hdr"><h2 class="sh rv">Frequently Asked Questions</h2></div>
-      <div class="faq-i rv"><button class="faq-q" onclick="togFaq(this)">How long does it take to build an automation?<span class="fi2">+</span></button><div class="faq-a"><p>Standard automations ship within 1–2 weeks. Complex custom AI solutions take 3–6 weeks. We always provide a clear timeline before starting.</p></div></div>
-      <div class="faq-i rv" style="transition-delay:.06s"><button class="faq-q" onclick="togFaq(this)">Do I need technical expertise?<span class="fi2">+</span></button><div class="faq-a"><p>Not at all! We handle all technical setup, integration, deployment. Solutions include intuitive dashboards, training, and documentation.</p></div></div>
-      <div class="faq-i rv" style="transition-delay:.12s"><button class="faq-q" onclick="togFaq(this)">What's the pricing model?<span class="fi2">+</span></button><div class="faq-a"><p>Project-based pricing for builds and monthly retainers for management. Every engagement starts with a free consultation and transparent quote.</p></div></div>
-      <div class="faq-i rv" style="transition-delay:.18s"><button class="faq-q" onclick="togFaq(this)">Can you integrate with our existing tools?<span class="fi2">+</span></button><div class="faq-a"><p>Absolutely — CRMs, communication tools, e-commerce platforms, databases, APIs. If it has an API, we connect it.</p></div></div>
-      <div class="faq-i rv" style="transition-delay:.24s"><button class="faq-q" onclick="togFaq(this)">Is my data safe?<span class="fi2">+</span></button><div class="faq-a"><p>Enterprise-grade encryption, SOC 2 compliant. Your data is never used to train models and remains fully under your control.</p></div></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="ftr">
+    <div class="container">
+      <div class="ftr-grid">
+        <div class="ftr-brand">
+          <div class="ftr-logo"><img src="logo.png" alt="MunibaVo Logo" class="ftr-logo-img">MunibaVo</div>
+          <p>AI automation solutions that transform how businesses operate. Intelligent agents working 24/7.</p>
+          <div class="ftr-soc"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="Twitter">𝕏</a><a
+              href="#" aria-label="Instagram">📷</a><a href="#" aria-label="WhatsApp">💬</a></div>
+        </div>
+        <div class="ftr-col">
+          <h4>Services</h4><a href="services.html">Email AI Agent</a><a href="services.html">AI Calling</a><a
+            href="services.html">WhatsApp Bots</a><a href="services.html">CRM Automation</a><a href="services.html">Lead
+            Generation</a>
+        </div>
+        <div class="ftr-col">
+          <h4>Company</h4><a href="about.html">About Us</a><a href="portfolio.html">Portfolio</a><a
+            href="contact.html">Contact</a><a href="#">Careers</a><a href="#">Blog</a>
+        </div>
+        <div class="ftr-col">
+          <h4>Resources</h4><a href="#">Documentation</a><a href="#">Case Studies</a><a href="#">API Reference</a><a
+            href="#">Privacy Policy</a><a href="#">Terms of Service</a>
+        </div>
+      </div>
+      <div class="ftr-bot">
+        <p>© 2025 MunibaVo. All rights reserved.</p>
+        <p>Built with AI. Powered by Passion.</p>
+      </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- FOOTER -->
-<footer class="ftr">
-  <div class="container">
-    <div class="ftr-grid">
-      <div class="ftr-brand"><div class="ftr-logo"><img src="logo.png" alt="MunibaVo Logo" class="ftr-logo-img">MunibaVo</div><p>AI automation solutions that transform how businesses operate. Intelligent agents working 24/7.</p><div class="ftr-soc"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="Twitter">𝕏</a><a href="#" aria-label="Instagram">📷</a><a href="#" aria-label="WhatsApp">💬</a></div></div>
-      <div class="ftr-col"><h4>Services</h4><a href="services.html">Email AI Agent</a><a href="services.html">AI Calling</a><a href="services.html">WhatsApp Bots</a><a href="services.html">CRM Automation</a><a href="services.html">Lead Generation</a></div>
-      <div class="ftr-col"><h4>Company</h4><a href="about.html">About Us</a><a href="portfolio.html">Portfolio</a><a href="contact.html">Contact</a><a href="#">Careers</a><a href="#">Blog</a></div>
-      <div class="ftr-col"><h4>Resources</h4><a href="#">Documentation</a><a href="#">Case Studies</a><a href="#">API Reference</a><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
-    </div>
-    <div class="ftr-bot"><p>© 2025 MunibaVo. All rights reserved.</p><p>Built with AI. Powered by Passion.</p></div>
-  </div>
-</footer>
+  <script src="script.js"></script>
+  <script>
+    /* ── Form (contact page only) ── */
+    function subForm(e) {
+      e.preventDefault(); const b = document.getElementById('subBtn');
+      b.classList.add('ld'); b.disabled = true;
+      setTimeout(() => { document.getElementById('cForm').style.display = 'none'; document.getElementById('fSuc').classList.add('show'); b.classList.remove('ld'); b.disabled = false }, 1800);
+    }
 
-<script src="script.js"></script>
-<script>
-/* ── Form (contact page only) ── */
-function subForm(e){
-  e.preventDefault();const b=document.getElementById('subBtn');
-  b.classList.add('ld');b.disabled=true;
-  setTimeout(()=>{document.getElementById('cForm').style.display='none';document.getElementById('fSuc').classList.add('show');b.classList.remove('ld');b.disabled=false},1800);
-}
-
-/* ── FAQ ── */
-function togFaq(b){const i=b.parentElement,o=i.classList.contains('open');document.querySelectorAll('.faq-i').forEach(f=>f.classList.remove('open'));if(!o)i.classList.add('open')}
-</script>
+    /* ── FAQ ── */
+    function togFaq(b) { const i = b.parentElement, o = i.classList.contains('open'); document.querySelectorAll('.faq-i').forEach(f => f.classList.remove('open')); if (!o) i.classList.add('open') }
+  </script>
 </body>
+
 </html>

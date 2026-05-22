@@ -1,219 +1,423 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MunibaVo — Automate Everything. Grow Faster.</title>
-<meta name="description" content="MunibaVo is a professional AI automation agency. Email agents, AI calling, WhatsApp bots, CRM automation, custom AI solutions.">
-<link rel="icon" type="image/png" href="logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MunibaVo — Automate Everything. Grow Faster.</title>
+  <meta name="description"
+    content="MunibaVo is a professional AI automation agency. Email agents, AI calling, WhatsApp bots, CRM automation, custom AI solutions.">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<div id="scrollBar"></div>
-<div class="cur-ring" id="curR"></div>
-<div class="cur-dot" id="curD"></div>
+  <div id="scrollBar"></div>
+  <div class="cur-ring" id="curR"></div>
+  <div class="cur-dot" id="curD"></div>
 
-<!-- NAV -->
-<nav class="nav" id="nav">
-  <div class="container nav-in">
-    <a href="index.html" class="nav-logo"><img src="logo.png" alt="MunibaVo Logo" class="logo-img">MunibaVo</a>
-    <div class="nav-links" id="navL">
-      <a href="index.html" class="nl-link act" data-page="home">Home</a>
-      <a href="services.html" class="nl-link" data-page="services">Services</a>
-      <a href="about.html" class="nl-link" data-page="about">About</a>
-      <a href="portfolio.html" class="nl-link" data-page="portfolio">Portfolio</a>
-      <a href="contact.html" class="nl-link" data-page="contact">Contact</a>
-    </div>
-    <div class="nav-r">
-      <button class="th-btn" id="thBtn" onclick="togTheme()" aria-label="Toggle theme"><span id="thI">🌙</span></button>
-      <a href="contact.html" class="nav-cta">Get Started →</a>
-      <button class="ham" id="ham" onclick="togMob()" aria-label="Menu"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-</nav>
-<div class="mob-ov" id="mobOv" onclick="togMob()"></div>
-<div class="mob-dr" id="mobDr">
-  <a href="index.html" class="nl-link act" data-page="home">Home</a>
-  <a href="services.html" class="nl-link" data-page="services">Services</a>
-  <a href="about.html" class="nl-link" data-page="about">About</a>
-  <a href="portfolio.html" class="nl-link" data-page="portfolio">Portfolio</a>
-  <a href="contact.html" class="nl-link" data-page="contact">Contact</a>
-</div>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-bg"><div class="h-orb h-orb1"></div><div class="h-orb h-orb2"></div><div class="h-orb h-orb3"></div><div class="h-grid"></div></div>
-  <div class="container">
-    <div class="hero-wrap">
-      <div class="hero-left">
-        <div class="h-badge rv"><span class="pulse"></span>AI Automation Agency — Serving 15+ Countries</div>
-        <h1 class="rv" style="transition-delay:.06s">We <span class="tw-w"><span class="tw-t" id="twT"></span><span class="tw-c"></span></span><br>Your Business With <span class="grad-tx">AI</span></h1>
-        <p class="hero-desc rv" style="transition-delay:.12s">From intelligent email agents to AI-powered calling systems, we build autonomous solutions that work 24/7 — so you can focus on growth, strategy, and what matters most.</p>
-        <div class="hero-btns rv" style="transition-delay:.18s">
-          <a href="contact.html" class="btn btn-p">Start Free Consultation <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-          <a href="portfolio.html" class="btn btn-s">View Case Studies <svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></a>
-        </div>
-        <div class="h-proof rv" style="transition-delay:.24s">
-          <div class="av-stack"><div class="av av1">AJ</div><div class="av av2">NK</div><div class="av av3">SP</div><div class="av av4">RD</div><div class="av av5">+</div></div>
-          <div class="proof-tx"><strong>150+ businesses</strong> trust us with their automation</div>
-        </div>
-        <div class="h-trust rv" style="transition-delay:.3s"><span class="star">★★★★★</span><span>4.9/5 from 120+ reviews</span></div>
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="container nav-in">
+      <a href="index.html" class="nav-logo"><img src="logo.png" alt="MunibaVo Logo" class="logo-img">MunibaVo</a>
+      <div class="nav-links" id="navL">
+        <a href="index.html" class="nl-link act" data-page="home">Home</a>
+        <a href="services.html" class="nl-link" data-page="services">Services</a>
+        <a href="about.html" class="nl-link" data-page="about">About</a>
+        <a href="portfolio.html" class="nl-link" data-page="portfolio">Portfolio</a>
+        <a href="contact.html" class="nl-link" data-page="contact">Contact</a>
       </div>
-      <div class="hero-right rv-s" style="transition-delay:.2s">
-        <div class="dash-mock">
-          <div class="dash-bar"><div class="dash-dot dd-r"></div><div class="dash-dot dd-y"></div><div class="dash-dot dd-g"></div></div>
-          <div class="dash-body">
-            <div class="dash-row"><div class="dash-icon di-b">📧</div><div class="dash-info"><h4>Email Agent</h4><p>Resolved 847 tickets today</p></div><div class="dash-badge db-grn">Active</div></div>
-            <div class="dash-row"><div class="dash-icon di-g">📞</div><div class="dash-info"><h4>Call Agent</h4><p>38 calls handled this hour</p></div><div class="dash-badge db-grn">Live</div></div>
-            <div class="dash-row"><div class="dash-icon di-p">💬</div><div class="dash-info"><h4>WhatsApp Bot</h4><p>Processing 12 orders now</p></div><div class="dash-badge db-ac">Running</div></div>
-            <div class="dash-row"><div class="dash-icon di-a">⚙️</div><div class="dash-info"><h4>CRM Sync</h4><p>Next run in 5 min</p></div><div class="dash-badge db-amb">Scheduled</div></div>
-            <div class="dash-chart"><div class="chart-bar"></div><div class="chart-bar"></div><div class="chart-bar"></div><div class="chart-bar"></div><div class="chart-bar"></div><div class="chart-bar"></div><div class="chart-bar"></div><div class="chart-bar"></div></div>
+      <div class="nav-r">
+        <button class="th-btn" id="thBtn" onclick="togTheme()" aria-label="Toggle theme"><span
+            id="thI">🌙</span></button>
+        <a href="contact.html" class="nav-cta">Get Started →</a>
+        <button class="ham" id="ham" onclick="togMob()"
+          aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <div class="mob-ov" id="mobOv" onclick="togMob()"></div>
+  <div class="mob-dr" id="mobDr">
+    <a href="index.html" class="nl-link act" data-page="home">Home</a>
+    <a href="services.html" class="nl-link" data-page="services">Services</a>
+    <a href="about.html" class="nl-link" data-page="about">About</a>
+    <a href="portfolio.html" class="nl-link" data-page="portfolio">Portfolio</a>
+    <a href="contact.html" class="nl-link" data-page="contact">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="h-orb h-orb1"></div>
+      <div class="h-orb h-orb2"></div>
+      <div class="h-orb h-orb3"></div>
+      <div class="h-grid"></div>
+    </div>
+    <div class="container">
+      <div class="hero-wrap">
+        <div class="hero-left">
+          <div class="h-badge rv"><span class="pulse"></span>AI Automation Agency — Serving 15+ Countries</div>
+          <h1 class="rv" style="transition-delay:.06s">We <span class="tw-w"><span class="tw-t" id="twT"></span><span
+                class="tw-c"></span></span><br>Your Business With <span class="grad-tx">AI</span></h1>
+          <p class="hero-desc rv" style="transition-delay:.12s">From intelligent email agents to AI-powered calling
+            systems, we build autonomous solutions that work 24/7 — so you can focus on growth, strategy, and what
+            matters most.</p>
+          <div class="hero-btns rv" style="transition-delay:.18s">
+            <a href="contact.html" class="btn btn-p">Start Free Consultation <svg viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg></a>
+            <a href="portfolio.html" class="btn btn-s">View Case Studies <svg viewBox="0 0 24 24">
+                <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+              </svg></a>
+          </div>
+          <div class="h-proof rv" style="transition-delay:.24s">
+            <div class="av-stack">
+              <div class="av av1">AJ</div>
+              <div class="av av2">NK</div>
+              <div class="av av3">SP</div>
+              <div class="av av4">RD</div>
+              <div class="av av5">+</div>
+            </div>
+            <div class="proof-tx"><strong>150+ businesses</strong> trust us with their automation</div>
+          </div>
+          <div class="h-trust rv" style="transition-delay:.3s"><span class="star">★★★★★</span><span>4.9/5 from 120+
+              reviews</span></div>
+        </div>
+        <div class="hero-right rv-s" style="transition-delay:.2s">
+          <div class="dash-mock">
+            <div class="dash-bar">
+              <div class="dash-dot dd-r"></div>
+              <div class="dash-dot dd-y"></div>
+              <div class="dash-dot dd-g"></div>
+            </div>
+            <div class="dash-body">
+              <div class="dash-row">
+                <div class="dash-icon di-b">📧</div>
+                <div class="dash-info">
+                  <h4>Email Agent</h4>
+                  <p>Resolved 847 tickets today</p>
+                </div>
+                <div class="dash-badge db-grn">Active</div>
+              </div>
+              <div class="dash-row">
+                <div class="dash-icon di-g">📞</div>
+                <div class="dash-info">
+                  <h4>Call Agent</h4>
+                  <p>38 calls handled this hour</p>
+                </div>
+                <div class="dash-badge db-grn">Live</div>
+              </div>
+              <div class="dash-row">
+                <div class="dash-icon di-p">💬</div>
+                <div class="dash-info">
+                  <h4>WhatsApp Bot</h4>
+                  <p>Processing 12 orders now</p>
+                </div>
+                <div class="dash-badge db-ac">Running</div>
+              </div>
+              <div class="dash-row">
+                <div class="dash-icon di-a">⚙️</div>
+                <div class="dash-info">
+                  <h4>CRM Sync</h4>
+                  <p>Next run in 5 min</p>
+                </div>
+                <div class="dash-badge db-amb">Scheduled</div>
+              </div>
+              <div class="dash-chart">
+                <div class="chart-bar"></div>
+                <div class="chart-bar"></div>
+                <div class="chart-bar"></div>
+                <div class="chart-bar"></div>
+                <div class="chart-bar"></div>
+                <div class="chart-bar"></div>
+                <div class="chart-bar"></div>
+                <div class="chart-bar"></div>
+              </div>
+            </div>
+          </div>
+          <div class="float-card fc1">
+            <div class="fc-ico fi-g">✓</div>Lead qualified — booked demo
+          </div>
+          <div class="float-card fc2">
+            <div class="fc-ico fi-b">📧</div>847 emails handled today
+          </div>
+          <div class="float-card fc3">
+            <div class="fc-ico fi-p">↑</div><span style="color:var(--grn);font-weight:800">+42%</span>&nbsp;conversion
+            rate
           </div>
         </div>
-        <div class="float-card fc1"><div class="fc-ico fi-g">✓</div>Lead qualified — booked demo</div>
-        <div class="float-card fc2"><div class="fc-ico fi-b">📧</div>847 emails handled today</div>
-        <div class="float-card fc3"><div class="fc-ico fi-p">↑</div><span style="color:var(--grn);font-weight:800">+42%</span>&nbsp;conversion rate</div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- MARQUEE -->
-<section class="marquee-sec">
-  <div class="marquee-label rv">Trusted by innovative companies worldwide</div>
-  <div class="marquee-track" id="mqTrack">
-    <span class="mq-item">OpenAI</span><span class="mq-item">Twilio</span><span class="mq-item">Make.com</span><span class="mq-item">Zapier</span><span class="mq-item">HubSpot</span><span class="mq-item">Salesforce</span><span class="mq-item">Shopify</span><span class="mq-item">Google Cloud</span><span class="mq-item">AWS</span><span class="mq-item">Anthropic</span>
-    <span class="mq-item">OpenAI</span><span class="mq-item">Twilio</span><span class="mq-item">Make.com</span><span class="mq-item">Zapier</span><span class="mq-item">HubSpot</span><span class="mq-item">Salesforce</span><span class="mq-item">Shopify</span><span class="mq-item">Google Cloud</span><span class="mq-item">AWS</span><span class="mq-item">Anthropic</span>
-  </div>
-</section>
+  <!-- MARQUEE -->
+  <section class="marquee-sec">
+    <div class="marquee-label rv">Trusted by innovative companies worldwide</div>
+    <div class="marquee-track" id="mqTrack">
+      <span class="mq-item">OpenAI</span><span class="mq-item">Twilio</span><span class="mq-item">Make.com</span><span
+        class="mq-item">Zapier</span><span class="mq-item">HubSpot</span><span class="mq-item">Salesforce</span><span
+        class="mq-item">Shopify</span><span class="mq-item">Google Cloud</span><span class="mq-item">AWS</span><span
+        class="mq-item">Anthropic</span>
+      <span class="mq-item">OpenAI</span><span class="mq-item">Twilio</span><span class="mq-item">Make.com</span><span
+        class="mq-item">Zapier</span><span class="mq-item">HubSpot</span><span class="mq-item">Salesforce</span><span
+        class="mq-item">Shopify</span><span class="mq-item">Google Cloud</span><span class="mq-item">AWS</span><span
+        class="mq-item">Anthropic</span>
+    </div>
+  </section>
 
-<!-- FEATURES -->
-<section>
-  <div class="container">
-    <div class="sec-hdr">
-      <span class="slabel sl-b rv">What We Do</span>
-      <h2 class="sh rv" style="transition-delay:.05s">AI-Powered Solutions That <span class="grad-tx">Actually Work</span></h2>
-      <p class="ss rv" style="transition-delay:.1s">We don't build hype — we build systems that handle real work, save real hours, and drive real revenue.</p>
+  <!-- FEATURES -->
+  <section>
+    <div class="container">
+      <div class="sec-hdr">
+        <span class="slabel sl-b rv">What We Do</span>
+        <h2 class="sh rv" style="transition-delay:.05s">AI-Powered Solutions That <span class="grad-tx">Actually
+            Work</span></h2>
+        <p class="ss rv" style="transition-delay:.1s">We don't build hype — we build systems that handle real work, save
+          real hours, and drive real revenue.</p>
+      </div>
+      <div class="feat-grid">
+        <div class="card feat-card rv">
+          <div class="fi fi-b">📧</div>
+          <h3>Email Reply Agent</h3>
+          <p>AI reads, understands, and responds to emails — support tickets, follow-ups, inquiries — around the clock
+            with zero wait time.</p>
+        </div>
+        <div class="card feat-card rv" style="transition-delay:.06s">
+          <div class="fi fi-p">📞</div>
+          <h3>AI Calling Agent</h3>
+          <p>Inbound & outbound voice agents that qualify leads, book appointments, handle objections, and close with
+            natural conversations.</p>
+        </div>
+        <div class="card feat-card rv" style="transition-delay:.12s">
+          <div class="fi fi-g">💬</div>
+          <h3>WhatsApp Automation</h3>
+          <p>Smart bots that engage leads, answer FAQs, process orders, and turn your #1 messaging app into a revenue
+            machine.</p>
+        </div>
+        <div class="card feat-card rv" style="transition-delay:.06s">
+          <div class="fi fi-a">⚙️</div>
+          <h3>CRM & Workflow</h3>
+          <p>Connect your CRM, project tools, databases into seamless pipelines. Zero manual data entry, 100% real-time
+            sync.</p>
+        </div>
+        <div class="card feat-card rv" style="transition-delay:.12s">
+          <div class="fi fi-b">🧠</div>
+          <h3>Custom AI Solutions</h3>
+          <p>Document analysis, predictive analytics, data extraction, intelligent routing — bespoke AI for any unique
+            business challenge.</p>
+        </div>
+        <div class="card feat-card rv" style="transition-delay:.18s">
+          <div class="fi fi-p">🚀</div>
+          <h3>Lead Generation</h3>
+          <p>AI-powered funnels that identify, engage, and qualify prospects automatically — filling your pipeline while
+            you sleep.</p>
+        </div>
+      </div>
     </div>
-    <div class="feat-grid">
-      <div class="card feat-card rv"><div class="fi fi-b">📧</div><h3>Email Reply Agent</h3><p>AI reads, understands, and responds to emails — support tickets, follow-ups, inquiries — around the clock with zero wait time.</p></div>
-      <div class="card feat-card rv" style="transition-delay:.06s"><div class="fi fi-p">📞</div><h3>AI Calling Agent</h3><p>Inbound & outbound voice agents that qualify leads, book appointments, handle objections, and close with natural conversations.</p></div>
-      <div class="card feat-card rv" style="transition-delay:.12s"><div class="fi fi-g">💬</div><h3>WhatsApp Automation</h3><p>Smart bots that engage leads, answer FAQs, process orders, and turn your #1 messaging app into a revenue machine.</p></div>
-      <div class="card feat-card rv" style="transition-delay:.06s"><div class="fi fi-a">⚙️</div><h3>CRM & Workflow</h3><p>Connect your CRM, project tools, databases into seamless pipelines. Zero manual data entry, 100% real-time sync.</p></div>
-      <div class="card feat-card rv" style="transition-delay:.12s"><div class="fi fi-b">🧠</div><h3>Custom AI Solutions</h3><p>Document analysis, predictive analytics, data extraction, intelligent routing — bespoke AI for any unique business challenge.</p></div>
-      <div class="card feat-card rv" style="transition-delay:.18s"><div class="fi fi-p">🚀</div><h3>Lead Generation</h3><p>AI-powered funnels that identify, engage, and qualify prospects automatically — filling your pipeline while you sleep.</p></div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- HOW IT WORKS -->
-<section style="background:var(--bg2)">
-  <div class="container">
-    <div class="sec-hdr">
-      <span class="slabel sl-p rv">Process</span>
-      <h2 class="sh rv" style="transition-delay:.05s">Three Steps to <span class="grad-tx">Full Automation</span></h2>
-      <p class="ss rv" style="transition-delay:.1s">We make the complex simple. Here's exactly how we work with every client.</p>
+  <!-- HOW IT WORKS -->
+  <section style="background:var(--bg2)">
+    <div class="container">
+      <div class="sec-hdr">
+        <span class="slabel sl-p rv">Process</span>
+        <h2 class="sh rv" style="transition-delay:.05s">Three Steps to <span class="grad-tx">Full Automation</span></h2>
+        <p class="ss rv" style="transition-delay:.1s">We make the complex simple. Here's exactly how we work with every
+          client.</p>
+      </div>
+      <div class="how-grid">
+        <div class="card how-card rv">
+          <div class="hw-n">1</div>
+          <h3>Consult & Analyze</h3>
+          <p>We map your business processes, identify bottlenecks, and find the highest-impact automation opportunities.
+          </p>
+        </div>
+        <div class="card how-card rv" style="transition-delay:.1s">
+          <div class="hw-n">2</div>
+          <h3>Design & Build</h3>
+          <p>Our engineers architect custom AI agents tailored to your exact workflows, data, and goals — tested
+            rigorously.</p>
+        </div>
+        <div class="card how-card rv" style="transition-delay:.2s">
+          <div class="hw-n">3</div>
+          <h3>Deploy & Optimize</h3>
+          <p>We launch, monitor, and continuously optimize your automations — delivering measurable results from day
+            one.</p>
+        </div>
+      </div>
     </div>
-    <div class="how-grid">
-      <div class="card how-card rv"><div class="hw-n">1</div><h3>Consult & Analyze</h3><p>We map your business processes, identify bottlenecks, and find the highest-impact automation opportunities.</p></div>
-      <div class="card how-card rv" style="transition-delay:.1s"><div class="hw-n">2</div><h3>Design & Build</h3><p>Our engineers architect custom AI agents tailored to your exact workflows, data, and goals — tested rigorously.</p></div>
-      <div class="card how-card rv" style="transition-delay:.2s"><div class="hw-n">3</div><h3>Deploy & Optimize</h3><p>We launch, monitor, and continuously optimize your automations — delivering measurable results from day one.</p></div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- STATS BANNER -->
-<section>
-  <div class="container">
-    <div class="stats-banner rv-s">
-      <div class="st-bl"><h3><span class="counter" data-target="500">0</span>+</h3><p>Automations Built</p></div>
-      <div class="st-bl"><h3><span class="counter" data-target="98">0</span>%</h3><p>Client Satisfaction</p></div>
-      <div class="st-bl"><h3><span class="counter" data-target="150">0</span>+</h3><p>Businesses Served</p></div>
-      <div class="st-bl"><h3><span class="counter" data-target="24">0</span>/7</h3><p>AI Operations</p></div>
+  <!-- STATS BANNER -->
+  <section>
+    <div class="container">
+      <div class="stats-banner rv-s">
+        <div class="st-bl">
+          <h3><span class="counter" data-target="500">0</span>+</h3>
+          <p>Automations Built</p>
+        </div>
+        <div class="st-bl">
+          <h3><span class="counter" data-target="98">0</span>%</h3>
+          <p>Client Satisfaction</p>
+        </div>
+        <div class="st-bl">
+          <h3><span class="counter" data-target="150">0</span>+</h3>
+          <p>Businesses Served</p>
+        </div>
+        <div class="st-bl">
+          <h3><span class="counter" data-target="24">0</span>/7</h3>
+          <p>AI Operations</p>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- RESULTS ROW -->
-<section style="background:var(--bg2)">
-  <div class="container">
-    <div class="sec-hdr">
-      <span class="slabel sl-g rv">Impact</span>
-      <h2 class="sh rv" style="transition-delay:.05s">Real Results, <span class="grad-tx">Real Numbers</span></h2>
+  <!-- RESULTS ROW -->
+  <section style="background:var(--bg2)">
+    <div class="container">
+      <div class="sec-hdr">
+        <span class="slabel sl-g rv">Impact</span>
+        <h2 class="sh rv" style="transition-delay:.05s">Real Results, <span class="grad-tx">Real Numbers</span></h2>
+      </div>
+      <div class="results-row">
+        <div class="result-card rv">
+          <h3 class="rc-b">90%</h3>
+          <p>Faster Response Times</p>
+        </div>
+        <div class="result-card rv" style="transition-delay:.08s">
+          <h3 class="rc-g">3×</h3>
+          <p>More Qualified Leads</p>
+        </div>
+        <div class="result-card rv" style="transition-delay:.16s">
+          <h3 class="rc-p">$50M+</h3>
+          <p>Revenue Generated for Clients</p>
+        </div>
+      </div>
     </div>
-    <div class="results-row">
-      <div class="result-card rv"><h3 class="rc-b">90%</h3><p>Faster Response Times</p></div>
-      <div class="result-card rv" style="transition-delay:.08s"><h3 class="rc-g">3×</h3><p>More Qualified Leads</p></div>
-      <div class="result-card rv" style="transition-delay:.16s"><h3 class="rc-p">$50M+</h3><p>Revenue Generated for Clients</p></div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- TESTIMONIALS -->
-<section>
-  <div class="container">
-    <div class="sec-hdr">
-      <span class="slabel sl-a rv">Testimonials</span>
-      <h2 class="sh rv" style="transition-delay:.05s">Loved by <span class="grad-tx">Business Leaders</span></h2>
-      <p class="ss rv" style="transition-delay:.1s">Don't take our word for it — hear from the teams we've transformed.</p>
+  <!-- TESTIMONIALS -->
+  <section>
+    <div class="container">
+      <div class="sec-hdr">
+        <span class="slabel sl-a rv">Testimonials</span>
+        <h2 class="sh rv" style="transition-delay:.05s">Loved by <span class="grad-tx">Business Leaders</span></h2>
+        <p class="ss rv" style="transition-delay:.1s">Don't take our word for it — hear from the teams we've
+          transformed.</p>
+      </div>
+      <div class="test-grid">
+        <div class="card test-card rv">
+          <div class="test-stars">★★★★★</div>
+          <blockquote>"MunibaVo's email agent handles 85% of our support tickets autonomously. Response time went from 4
+            hours to under 30 seconds. Absolute game-changer."</blockquote>
+          <div class="test-auth">
+            <div class="test-av ta1">AJ</div>
+            <div class="test-meta">
+              <h4>Arjun Joshi</h4>
+              <p>CEO, ShopVista</p>
+            </div>
+          </div>
+        </div>
+        <div class="card test-card rv" style="transition-delay:.08s">
+          <div class="test-stars">★★★★★</div>
+          <blockquote>"The AI calling agent books 3× more qualified viewings than our human team. It calls leads within
+            60 seconds — we've never converted this fast."</blockquote>
+          <div class="test-auth">
+            <div class="test-av ta2">NK</div>
+            <div class="test-meta">
+              <h4>Neha Kapoor</h4>
+              <p>Director, PrimeRealty</p>
+            </div>
+          </div>
+        </div>
+        <div class="card test-card rv" style="transition-delay:.16s">
+          <div class="test-stars">★★★★★</div>
+          <blockquote>"Our WhatsApp orders jumped 45% after MunibaVo's bot went live. Customers love browsing the menu
+            and ordering without leaving the chat."</blockquote>
+          <div class="test-auth">
+            <div class="test-av ta3">SP</div>
+            <div class="test-meta">
+              <h4>Sameer Patel</h4>
+              <p>Founder, FreshBites</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="test-grid">
-      <div class="card test-card rv"><div class="test-stars">★★★★★</div><blockquote>"MunibaVo's email agent handles 85% of our support tickets autonomously. Response time went from 4 hours to under 30 seconds. Absolute game-changer."</blockquote><div class="test-auth"><div class="test-av ta1">AJ</div><div class="test-meta"><h4>Arjun Joshi</h4><p>CEO, ShopVista</p></div></div></div>
-      <div class="card test-card rv" style="transition-delay:.08s"><div class="test-stars">★★★★★</div><blockquote>"The AI calling agent books 3× more qualified viewings than our human team. It calls leads within 60 seconds — we've never converted this fast."</blockquote><div class="test-auth"><div class="test-av ta2">NK</div><div class="test-meta"><h4>Neha Kapoor</h4><p>Director, PrimeRealty</p></div></div></div>
-      <div class="card test-card rv" style="transition-delay:.16s"><div class="test-stars">★★★★★</div><blockquote>"Our WhatsApp orders jumped 45% after MunibaVo's bot went live. Customers love browsing the menu and ordering without leaving the chat."</blockquote><div class="test-auth"><div class="test-av ta3">SP</div><div class="test-meta"><h4>Sameer Patel</h4><p>Founder, FreshBites</p></div></div></div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- CTA BANNER -->
-<section>
-  <div class="container">
-    <div class="cta-ban rv-s">
-      <h2>Ready to Automate Your Business?</h2>
-      <p>Book a free 30-minute strategy call. We'll map your automation opportunities — no strings attached.</p>
-      <a href="contact.html" class="btn-w">Schedule Free Consultation →</a>
+  <!-- CTA BANNER -->
+  <section>
+    <div class="container">
+      <div class="cta-ban rv-s">
+        <h2>Ready to Automate Your Business?</h2>
+        <p>Book a free 30-minute strategy call. We'll map your automation opportunities — no strings attached.</p>
+        <a href="contact.html" class="btn-w">Schedule Free Consultation →</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- NEWSLETTER -->
-<section class="nl-sec" style="background:var(--bg2)">
-  <div class="container">
-    <div class="sec-hdr">
-      <span class="slabel sl-b rv">Stay Updated</span>
-      <h2 class="sh rv" style="transition-delay:.05s">Get AI Automation Tips Weekly</h2>
-      <p class="ss rv" style="transition-delay:.1s">Join 5,000+ founders who get our best automation insights every Thursday.</p>
+  <!-- NEWSLETTER -->
+  <section class="nl-sec" style="background:var(--bg2)">
+    <div class="container">
+      <div class="sec-hdr">
+        <span class="slabel sl-b rv">Stay Updated</span>
+        <h2 class="sh rv" style="transition-delay:.05s">Get AI Automation Tips Weekly</h2>
+        <p class="ss rv" style="transition-delay:.1s">Join 5,000+ founders who get our best automation insights every
+          Thursday.</p>
+      </div>
+      <div class="nl-form rv" style="transition-delay:.15s">
+        <input type="email" placeholder="Enter your email address" id="nlEmail">
+        <button
+          onclick="document.getElementById('nlEmail').value='';this.textContent='Subscribed ✓';setTimeout(()=>this.textContent='Subscribe',2000)">Subscribe</button>
+      </div>
     </div>
-    <div class="nl-form rv" style="transition-delay:.15s">
-      <input type="email" placeholder="Enter your email address" id="nlEmail">
-      <button onclick="document.getElementById('nlEmail').value='';this.textContent='Subscribed ✓';setTimeout(()=>this.textContent='Subscribe',2000)">Subscribe</button>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- FOOTER -->
-<footer class="ftr">
-  <div class="container">
-    <div class="ftr-grid">
-      <div class="ftr-brand"><div class="ftr-logo"><img src="logo.png" alt="MunibaVo Logo" class="ftr-logo-img">MunibaVo</div><p>AI automation solutions that transform how businesses operate. Intelligent agents working 24/7.</p><div class="ftr-soc"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="Twitter">𝕏</a><a href="#" aria-label="Instagram">📷</a><a href="#" aria-label="WhatsApp">💬</a></div></div>
-      <div class="ftr-col"><h4>Services</h4><a href="services.html">Email AI Agent</a><a href="services.html">AI Calling</a><a href="services.html">WhatsApp Bots</a><a href="services.html">CRM Automation</a><a href="services.html">Lead Generation</a></div>
-      <div class="ftr-col"><h4>Company</h4><a href="about.html">About Us</a><a href="portfolio.html">Portfolio</a><a href="contact.html">Contact</a><a href="#">Careers</a><a href="#">Blog</a></div>
-      <div class="ftr-col"><h4>Resources</h4><a href="#">Documentation</a><a href="#">Case Studies</a><a href="#">API Reference</a><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+  <!-- FOOTER -->
+  <footer class="ftr">
+    <div class="container">
+      <div class="ftr-grid">
+        <div class="ftr-brand">
+          <div class="ftr-logo"><img src="logo.png" alt="MunibaVo Logo" class="ftr-logo-img">MunibaVo</div>
+          <p>AI automation solutions that transform how businesses operate. Intelligent agents working 24/7.</p>
+          <div class="ftr-soc"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="Twitter">𝕏</a><a
+              href="#" aria-label="Instagram">📷</a><a href="#" aria-label="WhatsApp">💬</a></div>
+        </div>
+        <div class="ftr-col">
+          <h4>Services</h4><a href="services.html">Email AI Agent</a><a href="services.html">AI Calling</a><a
+            href="services.html">WhatsApp Bots</a><a href="services.html">CRM Automation</a><a href="services.html">Lead
+            Generation</a>
+        </div>
+        <div class="ftr-col">
+          <h4>Company</h4><a href="about.html">About Us</a><a href="portfolio.html">Portfolio</a><a
+            href="contact.html">Contact</a><a href="#">Careers</a><a href="#">Blog</a>
+        </div>
+        <div class="ftr-col">
+          <h4>Resources</h4><a href="#">Documentation</a><a href="#">Case Studies</a><a href="#">API Reference</a><a
+            href="#">Privacy Policy</a><a href="#">Terms of Service</a>
+        </div>
+      </div>
+      <div class="ftr-bot">
+        <p>© 2025 MunibaVo. All rights reserved.</p>
+        <p>Built with AI. Powered by Passion.</p>
+      </div>
     </div>
-    <div class="ftr-bot"><p>© 2025 MunibaVo. All rights reserved.</p><p>Built with AI. Powered by Passion.</p></div>
-  </div>
-</footer>
+  </footer>
 
-<script src="script.js"></script>
-<script>
-/* ── Typewriter (home page only) ── */
-const tw=['Automate','Scale','Optimize','Transform','Supercharge'];
-let ti=0,tc=0,td=false;const tE=document.getElementById('twT');
-(function t(){const w=tw[ti];if(td){tc--;tE.textContent=w.substring(0,tc);if(!tc){td=false;ti=(ti+1)%tw.length;setTimeout(t,350);return}setTimeout(t,40)}else{tc++;tE.textContent=w.substring(0,tc);if(tc===w.length){td=true;setTimeout(t,1800);return}setTimeout(t,90)}})();
-</script>
+  <script src="script.js"></script>
+  <script>
+    /* ── Typewriter (home page only) ── */
+    const tw = ['Automate', 'Scale', 'Optimize', 'Transform', 'Supercharge'];
+    let ti = 0, tc = 0, td = false; const tE = document.getElementById('twT');
+    (function t() { const w = tw[ti]; if (td) { tc--; tE.textContent = w.substring(0, tc); if (!tc) { td = false; ti = (ti + 1) % tw.length; setTimeout(t, 350); return } setTimeout(t, 40) } else { tc++; tE.textContent = w.substring(0, tc); if (tc === w.length) { td = true; setTimeout(t, 1800); return } setTimeout(t, 90) } })();
+  </script>
 </body>
+
 </html>
