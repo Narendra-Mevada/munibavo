@@ -74,8 +74,8 @@ h1,h2,h3,h4,h5,h6{font-family:var(--font-h);line-height:1.15;font-weight:700}
 .nav.scrolled{background:var(--nav);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--brd);padding:10px 0}
 .nav-in{display:flex;align-items:center;justify-content:space-between}
 .nav-logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.2rem;letter-spacing:-.02em}
-.logo-m{width:36px;height:36px;border-radius:10px;background:var(--grad);display:grid;place-items:center;color:#fff;font-weight:800;font-size:.9rem;transition:transform .4s var(--spring)}
-.nav-logo:hover .logo-m{transform:rotate(-12deg) scale(1.08)}
+.logo-img{width:36px;height:36px;border-radius:10px;object-fit:cover;transition:transform .4s var(--spring)}
+.nav-logo:hover .logo-img{transform:rotate(-12deg) scale(1.08)}
 .nav-links{display:flex;align-items:center;gap:4px}
 .nl-link{padding:8px 16px;border-radius:var(--r-sm);font-size:.9rem;font-weight:500;color:var(--tx2);transition:all var(--tr);position:relative}
 .nl-link:hover,.nl-link.act{color:var(--tx);background:var(--ac-s)}
@@ -421,7 +421,7 @@ section{padding:100px 0}
 .ftr-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px;margin-bottom:36px}
 .ftr-brand{padding-right:20px}
 .ftr-logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.1rem;margin-bottom:12px}
-.ftr-lm{width:32px;height:32px;border-radius:8px;background:var(--grad);display:grid;place-items:center;color:#fff;font-weight:800;font-size:.82rem}
+.ftr-logo-img{width:32px;height:32px;border-radius:8px;object-fit:cover}
 .ftr-brand p{color:var(--tx3);font-size:.85rem;line-height:1.6;margin-bottom:16px}
 .ftr-soc{display:flex;gap:8px}
 .ftr-soc a{width:34px;height:34px;border-radius:8px;background:var(--surf);border:1px solid var(--brd);display:grid;place-items:center;color:var(--tx3);font-size:.82rem;transition:all var(--tr)}
