@@ -15,8 +15,30 @@
     rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+<script>
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      document.getElementById("pre-load").classList.add("done");
+    }, 3000); // 3 seconds
+  });
+</script>
 
 <body>
+
+  <!-- LOADER -->
+  <!-- LOADER -->
+  <div id="pre-load" class="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <img src="bavo.png" alt="MunibaVo">
+      </div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </div>
 
   <div id="scrollBar"></div>
   <div class="cur-ring" id="curR"></div>
