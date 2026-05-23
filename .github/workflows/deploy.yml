@@ -21,7 +21,7 @@ jobs:
           username: ubuntu
           key: ${{ secrets.SSH_KEY }}
           script: |
-            sudo rm -rf /var/www/munibavo
+            sudo rm -rf /var/www/munibavo/
             cd /var/www/
             git clone https://github.com/Narendra-Mevada/munibavo.git
             sudo systemctl restart nginx
