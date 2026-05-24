@@ -3,9 +3,13 @@
 function togTheme() { const h = document.documentElement, n = h.dataset.theme === 'dark' ? 'light' : 'dark'; h.dataset.theme = n; localStorage.setItem('mv-t', n); updI() }
 function updI() { const i = document.getElementById('thI'); if (i) i.textContent = document.documentElement.dataset.theme === 'dark' ? '🌙' : '☀️' }
 
-/* ── Nav Scroll ── */
+/* ── Nav Scroll & Back to Top ── */
+const btt = document.getElementById('backToTop');
+if (btt) btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
 addEventListener('scroll', () => {
   document.getElementById('nav').classList.toggle('scrolled', scrollY > 40);
+  if (btt) btt.classList.toggle('show', scrollY > 400);
   const d = document.documentElement.scrollHeight - innerHeight;
   document.getElementById('scrollBar').style.width = (d > 0 ? (scrollY / d) * 100 : 0) + '%';
 }, { passive: true });
