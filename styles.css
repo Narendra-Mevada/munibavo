@@ -166,6 +166,7 @@
   --cur: 37, 99, 235;
   --grad: linear-gradient(135deg, #2563EB, #7C3AED);
   --grad2: linear-gradient(135deg, #2563EB 0%, #06B6D4 100%);
+
 }
 
 [data-theme="light"] {
@@ -2586,6 +2587,13 @@ section {
   border-color: var(--ac);
   color: var(--ac);
   transform: translateY(-2px)
+}
+
+[data-theme="light"] .ftr-soc a,
+[data-theme="light"] .soc-a {
+  background: #374151;
+  /* Dark grey for contrast */
+  border-color: #1F2937;
 }
 
 .ftr-col h4 {
