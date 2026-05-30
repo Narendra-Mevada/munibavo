@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like & Subscribe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #0f0f0f;
+            background-image: radial-gradient(circle at 50% 50%, #1a1a1a 0%, #0f0f0f 100%);
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+            padding: 40px 20px;
+        }
+
+        .icon-wrapper {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 40px;
+            background-color: #ff0000;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 40px rgba(255, 0, 0, 0.3);
+            animation: pulse 2s infinite;
+        }
+
+        .icon-wrapper svg {
+            width: 60px;
+            height: 60px;
+            fill: white;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 0 40px rgba(255, 0, 0, 0.3);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 0 60px rgba(255, 0, 0, 0.5);
+            }
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 4rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, #ffffff 0%, #a0a0a0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: #a0a0a0;
+            margin-bottom: 60px;
+            line-height: 1.6;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+        }
+
+        .btn {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 18px 40px;
+            border-radius: 100px;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(255,255,255,0.15);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .btn:hover::after {
+            opacity: 1;
+        }
+
+        .btn-subscribe {
+            background-color: #ff0000;
+            color: #ffffff;
+            box-shadow: 0 8px 30px rgba(255, 0, 0, 0.3);
+        }
+
+        .btn-subscribe:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(255, 0, 0, 0.4);
+        }
+
+        .btn-like {
+            background-color: #ffffff;
+            color: #0f0f0f;
+            box-shadow: 0 8px 30px rgba(255, 255, 255, 0.15);
+        }
+
+        .btn-like:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(255, 255, 255, 0.25);
+        }
+
+        .btn svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+            position: relative;
+            z-index: 1;
+        }
+
+        .btn span {
+            position: relative;
+            z-index: 1;
+        }
+
+        .social-proof {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            color: #808080;
+            font-size: 0.95rem;
+        }
+
+        .avatar-group {
+            display: flex;
+        }
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 3px solid #0f0f0f;
+            margin-left: -10px;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .avatar:first-child {
+            margin-left: 0;
+        }
+
+        @media (max-width: 640px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .btn {
+                font-size: 1rem;
+                padding: 16px 32px;
+            }
+
+            .icon-wrapper {
+                width: 100px;
+                height: 100px;
+            }
+
+            .icon-wrapper svg {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon-wrapper">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+            </svg>
+        </div>
+
+        <h1>Like & Subscribe<br>the Channel</h1>
+
+        <p class="subtitle">
+            Support the channel by hitting the like button<br>
+            and subscribe for amazing content every week.
+        </p>
+
+        <div class="buttons">
+            <a href="#" class="btn btn-subscribe">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                </svg>
+                <span>Subscribe</span>
+            </a>
+
+            <a href="#" class="btn btn-like">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/>
+                </svg>
+                <span>Like</span>
+            </a>
+        </div>
+
+        <div class="social-proof">
+            <div class="avatar-group">
+                <div class="avatar" style="background-color: #e91e63;">JD</div>
+                <div class="avatar" style="background-color: #2196f3;">AS</div>
+                <div class="avatar" style="background-color: #4caf50;">MK</div>
+                <div class="avatar" style="background-color: #ff9800;">+9K</div>
+            </div>
+            <span>9,420+ subscribers already joined</span>
+        </div>
+    </div>
+</body>
+</html>
