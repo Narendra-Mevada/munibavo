@@ -19,15 +19,23 @@
   window.addEventListener("load", () => {
     setTimeout(() => {
       document.getElementById("pre-load").classList.add("done");
-    }, 900); // 3 seconds
+    }, 3000); // 3 seconds
   });
 </script>
 
 <body>
+<div id="pre-load" class="loader">
+  <div class="loader-inner"></div>
+  <video id="loader-video" src="loader.mp4" autoplay muted playsinline preload="auto"></video>
+  <div id="loader-progress-track"><div id="loader-progress-fill"></div></div>
+  <button id="loader-skip" onclick="dismissLoader()">Skip ↗</button>
+  </div>
+</div>
+  <!-- LOADER -->    
+  <!-- LOADER -->
 
-  <!-- LOADER -->
-  <!-- LOADER -->
-  <div id="pre-load" class="loader">
+
+  <!-- <div id="pre-load" class="loader">
     <div class="loader-inner">
       <div class="loader-logo">
         <img src="bavo.png" alt="MunibaVo">
@@ -38,7 +46,7 @@
       <div class="box"></div>
       <div class="box"></div>
     </div>
-  </div>
+  </div> -->
 
   <div id="scrollBar"></div>
   <div class="cur-ring" id="curR"></div>
